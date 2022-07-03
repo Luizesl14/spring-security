@@ -1,6 +1,7 @@
 package com.spring.secirity.infrastructure.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.spring.secirity.infrastructure.util.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,7 @@ public class User extends BaseModel {
     @Column(name = "user_name")
     private String userName;
 
+    @JsonIgnore
     @Column(name = "password")
     private String password;
 

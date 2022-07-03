@@ -12,7 +12,10 @@ spring:
       ddl-auto: update
     database:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    allow-circular-references: true
 
 server:
   port: 8080
+
 
